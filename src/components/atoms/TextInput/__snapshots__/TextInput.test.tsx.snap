@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput should render correctly 1`] = `
+<TextInput
+  placeholder="Primary Input"
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#08949B",
+      "borderRadius": 20,
+      "borderStyle": "solid",
+      "borderWidth": 1,
+      "fontSize": 16,
+      "fontWeight": "600",
+      "justifyContent": "center",
+      "minHeight": 50,
+      "minWidth": 200,
+      "paddingLeft": 17,
+      "paddingRight": 17,
+    }
+  }
+  testID="input"
+/>
+`;
