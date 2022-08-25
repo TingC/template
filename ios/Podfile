@@ -4,7 +4,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'ReactNativeCliAtomicBoilerplate' do
+target 'ReactNativeTest' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -22,7 +22,7 @@ target 'ReactNativeCliAtomicBoilerplate' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'ReactNativeCliAtomicBoilerplateTests' do
+  target 'ReactNativeTestTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -31,10 +31,10 @@ target 'ReactNativeCliAtomicBoilerplate' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  # use_flipper!()
 
   post_install do |installer|
     react_native_post_install(installer)
-    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    # __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
 end

@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeCliAtomicBoilerplate",
+  "name": "ReactNativeTest",
   "version": "0.0.1",
   "license": "MIT",
   "homepage": "https://github.com/mattoracz/react-native-cli-atomic-boilerplate",
@@ -36,15 +36,30 @@
     ]
   },
   "dependencies": {
+    "@ant-design/icons-react-native": "^2.3.2",
+    "@ant-design/react-native": "^5.0.0",
+    "@react-native-community/cameraroll": "^4.1.2",
+    "@react-native-community/segmented-control": "^2.2.2",
+    "@react-native-community/slider": "^4.2.4",
+    "@react-native-picker/picker": "^2.4.3",
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
     "@react-navigation/stack": "^6.2.2",
+    "@reduxjs/toolkit": "^1.8.3",
     "@storybook/react-native": "^5.3.25",
+    "antd-mobile-rn": "^2.3.3",
+    "babel-plugin-import": "^1.13.5",
+    "moment": "^2.29.4",
     "react": "18.0.0",
+    "react-moment": "^1.1.2",
     "react-native": "0.69.1",
     "react-native-config": "^1.4.6",
+    "react-native-gesture-handler": "^2.5.0",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-safe-area-context": "^4.3.1",
-    "react-native-screens": "^3.15.0"
+    "react-native-screens": "^3.15.0",
+    "react-native-svg": "^12.4.3",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

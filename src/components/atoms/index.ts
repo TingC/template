@@ -1,4 +1,2 @@
-export { Button } from './Button/Button';
+export { ButtonTheme } from './Button/ButtonTheme';
 export { Label } from './Label/Label';
-export { TextInput } from './TextInput/TextInput';
-export { PressableLabel } from './PressableLabel/PressableLabel';

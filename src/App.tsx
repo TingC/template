@@ -1,13 +1,13 @@
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
 
-import ProfileScreen from './screens/ProfileScreen/ProfileScreen';
-import LoginScreen from './screens/LoginScreen/LoginScreen';
-import RegisterScreen from './screens/RegisterScreen/RegisterScreen';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import DemoScreen from './screens/DemoScreen/DemoScreen';
 
 export type RootStackParamList = {
-  LoginScreen: undefined;
+  DemoScreen: undefined;
   RegisterScreen: undefined;
   ProfileScreen: { id: number; firstName: string; lastName: string };
 };
@@ -16,25 +16,20 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="LoginScreen">
-        <Stack.Screen
-          name="LoginScreen"
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="RegisterScreen"
-          component={RegisterScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="ProfileScreen"
-          component={ProfileScreen}
-          options={{ headerShown: false }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      {/* <AntThemeProvider theme={antTheme}> */}
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="DemoScreen">
+          <Stack.Screen
+            name="DemoScreen"
+            component={DemoScreen}
+            options={{ headerShown: false }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+
+      {/* </AntThemeProvider> */}
+    </Provider>
   );
 };
 
